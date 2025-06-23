@@ -18,7 +18,7 @@
   |`<file_path>`: | path to the input Excel file | 
   | *Optional arguments:* |       |
   |`--sheet-patern`: | a regex to specify which sheet(s) to process |
-  |`--alttype`: | argument to specify how alternative segments are identified and written to TMX (<prop type="id">, or <prop type="prev"> and <prop type="next">). Supported values: `id` and `context` (defaults to `id`). If segment ID is not found in the Excel file, the segment is treated as if `context` was specified, even with `alttype` set to `id`. |
+  |`--alttype`: | argument to specify how alternative segments are identified and written to TMX (`<prop type="id">`, or `<prop type="prev">` and `<prop type="next">`). Supported values: `id` and `context` (defaults to `id`). If segment ID is not found in the Excel file, the segment is treated as if `context` was specified, even with `alttype` set to `id`. |
   |`--omt`: | argument (without value) to control the output location. If set, the output is `../tm/excel2tmx`, otherwise `../excel2tmx_output` |
 
   **Python dependencies:**

@@ -41,6 +41,7 @@
 
 # `tmx_cleaner.py`
 <details>
+
   A [Python script](tmx_cleaner.py) to remove extraneous TUs from a TMX file.  
   It removes segments without target, segments where source is identical to target, segments without letters.  
   

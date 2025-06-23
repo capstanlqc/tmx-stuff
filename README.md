@@ -6,6 +6,7 @@
   A [Python script](excel2tmx.py) to convert XLS(X) files to TMX.  
   The script is intended to convert spreadsheets created by [`﻿﻿write_project2excel.groovy`](https://github.com/capstanlqc/omegat-scripts/blob/master/write_project2excel.groovy) in OmegaT, but can work with any Excel file if the column headers are in the row 2.
 
+  **Usage:**
   ```bash
   usage: python3 excel2tmx.py [-h] --sl SL --tl TL [--sheet-pattern SHEET_PATTERN] [--alttype {id,context}] [--omt] <file_path>
   The following arguments are required: <file_path>, --sl, --tl
@@ -36,4 +37,16 @@
   
   The rest of the functionality is identical to the Python version.  
   For the first run, the computer should be connected to the internet to download required libraries. Once the dependencies are downloaded, connection is not required.
+</details>
+
+# `tmx_cleaner.py`
+<details>
+  A [Python script](tmx_cleaner.py) to remove extraneous TUs from a TMX file.  
+  It removes segments without target, segments where source is identical to target, segments without letters.  
+  
+  **Usage:**
+  ```bash
+  python3 tmx_cleaner.py <tmx_file_path>
+  ```
+  The resultant TMX is output to `cleaned/<tmx_file_name>` next to the input TMX file.
 </details>
